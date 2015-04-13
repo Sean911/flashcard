@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/Sean911/flashcards.svg?branch=master)](https://travis-ci.org/Sean911/flashcards) [![Code Climate](https://codeclimate.com/github/Sean911/flashcards.png)](https://codeclimate.com/github/Sean911/flashcards) [![Coverage Status](https://coveralls.io/repos/Sean911/flashcards/badge.png)](https://coveralls.io/r/Sean911/flashcards)
