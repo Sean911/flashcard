@@ -8,7 +8,12 @@ FactoryGirl.define do
   end
 
   factory :list do
-    # name "List_1"
     sequence(:name) {|n| "List_#{n}" }
   end
+
+  factory :word do
+    sequence(:name) {|n| "Word_#{n}" }
+    sequence(:definition) {|n| "This is the definition for Word_#{n}" }
+  end
+
 end
