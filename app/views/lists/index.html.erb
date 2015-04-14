@@ -3,6 +3,7 @@
     <td><%= link_to list.name, list_path(list) %></td>
   </tr>
 <% end %>
+
 <% if user_signed_in? %>
   <%= button_to 'Create a new list', new_list_path, method: :get %>
 <% end %>
