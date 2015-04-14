@@ -7,4 +7,8 @@ FactoryGirl.define do
     password_confirmation 'password'
   end
 
+  factory :list do
+    # name "List_1"
+    sequence(:name) {|n| "List_#{n}" }
+  end
 end
