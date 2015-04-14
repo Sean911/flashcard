@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'pry'
 
 feature 'user sees a list of words', %Q{
   As a user
@@ -7,7 +8,6 @@ feature 'user sees a list of words', %Q{
 } do
   let!(:user) { FactoryGirl.create(:user) }
   let!(:word) { FactoryGirl.create(:word) }
-
 
   before :each do
     sign_in user
