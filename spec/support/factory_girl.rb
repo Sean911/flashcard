@@ -11,9 +11,10 @@ FactoryGirl.define do
     sequence(:name) {|n| "List_#{n}" }
   end
 
-  # factory :word do
-  #   sequence(:name) {|n| "Word_#{n}" }
-  #   sequence(:definition) {|n| "This is the definition for Word_#{n}" }
-  # end
+  factory :word do
+    sequence(:name) {|n| "Word_#{n}" }
+    sequence(:definition) {|n| "This is the definition for Word_#{n}" }
+    list
+  end
 
 end

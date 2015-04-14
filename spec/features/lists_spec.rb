@@ -1,5 +1,4 @@
 require 'rails_helper'
-require "pry"
 
 feature 'user sees lists of words', %Q{
   As a user
