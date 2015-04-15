@@ -8,7 +8,7 @@ class ListsController < ApplicationController
     @words = @list.words.all
   end
 
-  def new
-    @list = List.new
-  end
+  # def new
+  #   @list = List.new
+  # end
 end
