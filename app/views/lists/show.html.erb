@@ -1,3 +1,4 @@
 <%= @list.name %>
+<%= button_to "Delete list", list_path(@list), method: :delete, data: { confirm: "Are you sure?" } %>
 
 <%= render @words, locals: { words: @words } %>
