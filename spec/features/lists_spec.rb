@@ -89,6 +89,6 @@ feature 'user deletes lists of words', %Q{
     visit list_path(owned_list)
     click_button("Delete list")
 
-    expect(page).to_not have_button("You can't delete someone else's list!")
+    expect(page).to have_content("You can't delete someone else's list!")
   end
 end
