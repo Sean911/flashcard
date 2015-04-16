@@ -85,7 +85,7 @@ feature 'user deletes lists of words', %Q{
   end
 
   scenario "user cannot delete someone else's list" do
-    sign_in user
+    sign_in user2
     visit list_path(owned_list)
     click_button("Delete list")
 
