@@ -1,4 +1,5 @@
 class ListsController < ApplicationController
+  before_filter :authenticate_user!
 
   def index
     @lists = List.all
@@ -31,7 +32,7 @@ class ListsController < ApplicationController
 
   def destroy
     @list = List.find(params[:id])
-    if current_user.id == list.user_id
+    if current_user.id == @list.user_id
       @list.destroy
       flash[:notice] = "List deleted!"
       redirect_to lists_path

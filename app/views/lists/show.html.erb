@@ -1,4 +1,10 @@
 <%= @list.name %>
 <%= button_to "Delete list", list_path(@list), method: :delete, data: { confirm: "Are you sure?" } %>
 
-<%= render @words, locals: { words: @words } %>
+<% if @list.words.exists? %>
+  <ul>
+    <% @word.each do |word| %>
+        <li><%= word %></li>
+    <% end %>
+  </ul>
+<% end %>
