@@ -16,5 +16,4 @@ FactoryGirl.define do
     sequence(:definition) {|n| "This is the definition for Word_#{n}" }
     list
   end
-
 end
