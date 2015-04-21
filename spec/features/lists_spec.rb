@@ -76,9 +76,7 @@ feature 'user deletes lists of words', %Q{
 
   scenario "deleting a list" do
     sign_in(user)
-
     visit list_path(owned_list)
-
     click_button("Delete list")
 
     expect(page).to have_content("List deleted!")

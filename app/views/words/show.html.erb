@@ -1,0 +1,3 @@
+<h1><%= @word.name %></h1>
+definition: <%= @word.definition %>
+<%= button_to 'Return to quiz', quiz_path(@word.list_id), method: :get %>

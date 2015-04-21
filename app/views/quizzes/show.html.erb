@@ -1,0 +1,9 @@
+<ul>
+<% @words.each do |word| %>
+<!-- <li><%= word.definition %></li> -->
+<li><%= link_to word.name, word_path(word)%></li>
+<!-- <li><%= @wordz.pop.name %></li> -->
+<% end %>
+</ul>
+
+<%= button_to 'End quiz', list_path(@list), method: :get %>
