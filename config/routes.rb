@@ -8,4 +8,7 @@ Rails.application.routes.draw do
      :create, :edit, :update, :destroy] do
        resources :words, only: [:new, :create, :show, :destroy]
      end
+
+  resources :quizzes, only: [:show]
+  resources :words, only: [:show]
 end
